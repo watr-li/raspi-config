@@ -14,6 +14,6 @@ tmux send-keys "./frontend.sh" C-m
 tmux select-pane -t 1  
 tmux send-keys "./proxy.sh" C-m
 tmux select-pane -t 2  
-tmux send-keys "./wpan.sh" C-m
+tmux send-keys "sudo ./wpan.sh && sudo ./fix_nameserver.sh && sudo ./sync_time.sh" C-m
 
 tmux attach -t $SESSION
