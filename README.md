@@ -2,7 +2,19 @@
 
 * The IP of the raspi can be configured via the cmdline.txt file.
 
- 
+1. Start Raspi and SSH to it
+2. Make sure it has internet connectiviy for twitter
+3. go to `~/watrli/`
+4. Run `start.sh`
+5. Watch as things explode around you
+
+
+# Nodes
+
+1. Get the `nodes` and `RIOT` repositories from the watr.li organization
+2. Build `nodes/plant_node` for the SAMR21 (make sure to use the watrli RIOT)
+3. Flash to device
+    * Debug output will not be displayed using `make term`, you need a UART USB adapter thingy (ask peter)
 
 # Troubleshooting
 
